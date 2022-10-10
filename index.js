@@ -6,7 +6,8 @@ console.log("Welcome to the Doraemon Quiz --:");
 
 
 function play(question,answer){
-  var userAnswer = readlineSync.question(question)
+  var userAnswer = readlineSync.question(question);
+    userAnswer = userAnswer.toLowerCase();
   
   if(userAnswer === answer){
     console.log("You are right");
